@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import FoundItems from "./pages/FoundItems";
 import LostItems from "./pages/LostItems";
+import ReportFound from "./pages/ReportFound";
 import ItemDetail from "./pages/ItemDetail";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
@@ -23,7 +24,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/found-items" element={<FoundItems />} />
           <Route path="/lost-items" element={<LostItems />} />
-          <Route path="/report-found" element={<LostItems />} />
+          <Route path="/report-found" element={<ReportFound />} />
           <Route path="/item/:id" element={<ItemDetail />} />
           <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -21,8 +21,8 @@ const Header = () => {
           <Link to="/found-items" className="text-gray-700 hover:text-purple-500 transition-colors">
             Found Items
           </Link>
-          <Link to="/lost-items" className="text-gray-700 hover:text-purple-500 transition-colors">
-            Report Lost
+          <Link to="/report-found" className="text-gray-700 hover:text-purple-500 transition-colors">
+            Report Found
           </Link>
           <Link to="/about" className="text-gray-700 hover:text-purple-500 transition-colors">
             About
@@ -33,8 +33,8 @@ const Header = () => {
           <Button variant="ghost" size="icon" className="hidden md:flex text-gray-700 hover:text-purple-500">
             <Search className="h-5 w-5" />
           </Button>
-          <Button className="bg-purple-500 hover:bg-purple-600 text-white">
-            Report Item
+          <Button className="bg-purple-500 hover:bg-purple-600 text-white" asChild>
+            <Link to="/report-found">Report Found</Link>
           </Button>
         </div>
 
